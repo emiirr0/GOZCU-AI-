@@ -1,0 +1,25 @@
+# kullanıcının çalışma verisi — depoya girmez
+altin_numune/*
+!altin_numune/OKU.txt
+fotograflar/*
+!fotograflar/OKU.txt
+cikti/
+ayarlar.json
+ayarlar.json.tmp
+sayaclar.json
+sayaclar.tmp
+sayaclar.bozuk.json
+gecmis.jsonl
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+# işletim sistemi
+.DS_Store
+Thumbs.db
+desktop.ini

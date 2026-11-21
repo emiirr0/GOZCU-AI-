@@ -1,0 +1,16 @@
+digraph G {
+  graph [rankdir=LR, fontname="Helvetica", bgcolor="white", pad=0.3, nodesep=0.3, ranksep=0.45];
+  node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=10.5, fillcolor="#F4F6F8", color="#263039"];
+  edge [color="#5C6B75", fontname="Helvetica", fontsize=9];
+  img [label="Fotoğraf / kamera karesi", fillcolor="#E8EEF2"];
+  hz [label="Hazırlama\nboyut · 5 stratejili parça bulma\neğim düzeltme · ölçek"];
+  kk [label="Kalite kapıları\nbulanık · karanlık · parlama\nkesik · çoklu · elde/temas", fillcolor="#FFF4DE", color="#F5A623"];
+  dt [label="Dedektörler\nkontur · yüzey · renk\ndolum · delik geometrisi"];
+  pl [label="Politika + skor\ntolerans · uygunluk eşiği"];
+  k [label="Karar\nSAĞLAM / ŞÜPHELİ / FİRE", fillcolor="#E6F4EA", color="#3FB950"];
+  out [label="Çıktılar\nişaretli görüntü · HTML/CSV rapor\nsayaç · geçmiş (tekrar sayılmaz)"];
+  usta [label="USTA·AI\n(isteğe bağlı)", fillcolor="#E8F6FA", color="#35C4E0"];
+  sp [label="ŞÜPHELİ\n+ neden + ne yapılacak", fillcolor="#FFF4DE", color="#F5A623"];
+  img -> hz -> kk -> dt -> pl -> k -> out -> usta [style=dashed];
+  kk -> sp [label="geçmezse", style=dashed];
+}

@@ -1,0 +1,15 @@
+ALTIN NUMUNE KLASÖRÜ
+====================
+Buraya YALNIZCA kendi SAĞLAM (kusursuz) parçanın fotoğraflarını koy — 2-3 adet.
+Sonra 3_KALIBRE.bat çalıştır.
+
+  ✗ Farklı parçaları karıştırma (sistem fark eder ve kalibrasyonu reddeder).
+  ✗ Örnek dosyaları buraya kopyalama — örnekler için 0_ORNEK_DENE.bat var.
+
+Fotoğraf kuralları:
+  • parça elde DEĞİL, düz zeminde; kadrajın ortasında, tek başına
+  • tam tepeden, dik açıyla
+  • parça açık renkliyse koyu, koyuysa açık sade zemin
+  • flaşsız, eşit ışık
+  • yarı saydam parçanın altına mat ve zıt renkli bir karton koy
+Kalibrasyondan sonra "Öz-test: ... SAĞLAM çıktı" yazısını görmeden devam etme.

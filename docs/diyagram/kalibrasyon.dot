@@ -1,0 +1,15 @@
+digraph G {
+  graph [rankdir=LR, fontname="Helvetica", bgcolor="white", pad=0.25, nodesep=0.25, ranksep=0.35];
+  node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=10, fillcolor="#F4F6F8", color="#263039"];
+  edge [color="#5C6B75", fontname="Helvetica", fontsize=9];
+  a [label="altin_numune/\n2–3 SAĞLAM fotoğraf"];
+  b [label="Ölçüm\nçap · delik oranı\nkenar pürüzü · yüzey gürültüsü"];
+  c [label="Tutarlılık denetimi\nfarklı parça karışmış mı?", fillcolor="#FFF4DE", color="#F5A623"];
+  x [label="RED\nkalibrasyon kaydedilmez", fillcolor="#FDECEC", color="#E5484D"];
+  d [label="Eşikleri öğren\n→ ayarlar.json"];
+  e [label="Öz-test\naltınlar SAĞLAM mı?", fillcolor="#E6F4EA", color="#3FB950"];
+  f [label="Geçmezse: hiçbir parça\nSAĞLAM onayı almaz", fillcolor="#FDECEC", color="#E5484D"];
+  a -> b -> c -> d -> e;
+  c -> x [style=dashed, label="evet"];
+  e -> f [style=dashed, label="hayır"];
+}

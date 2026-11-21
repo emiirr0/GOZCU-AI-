@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gozcu-ai"
+version = "2.0.0"
+description = "Görüntü işleme ile enjeksiyon parçası kalite muayenesi — SAĞLAM / ŞÜPHELİ / FİRE"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {file = "LICENSE"}
+dependencies = ["opencv-python>=4.5.5", "numpy>=1.21"]
+
+[project.optional-dependencies]
+gelistirme = ["pytest>=7"]
+
+[project.scripts]
+gozcu = "gozcu.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["gozcu*"]
+
+[tool.setuptools.package-data]
+gozcu = ["ornekler/altin/*", "ornekler/kontrol/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning"]

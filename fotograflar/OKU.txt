@@ -1,0 +1,9 @@
+FOTOĞRAFLAR KLASÖRÜ
+===================
+Kontrol edilecek parça fotoğraflarını buraya at (jpg/png, istediğin kadar).
+Sonra 4_FOTO_INCELE.bat çalıştır; rapor tarayıcıda kendiliğinden açılır.
+
+  • Altın numuneyle AYNI düzende çek (aynı zemin, ışık, açı).
+  • Aynı fotoğrafı tekrar incelemek sayaçları ŞİŞİRMEZ: daha önce sayılan
+    fotoğraflar (adı değişse bile) toplamlara yeniden eklenmez.
+  • Sayaçları sıfırlamak: python -m gozcu sifirla

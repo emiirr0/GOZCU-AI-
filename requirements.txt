@@ -1,0 +1,3 @@
+# GÖZCÜ·AI çalışma bağımlılıkları
+opencv-python>=4.5.5   # canlı kamera penceresi için "headless" OLMAYAN sürüm
+numpy>=1.21
